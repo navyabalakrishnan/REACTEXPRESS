@@ -1,0 +1,301 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.btnknow:hover, .btnknow:focus{
+    background-color: hsl(75, 24%, 41%);
+    color:rgb(255, 255, 255);
+  }
+  .profilestyle {
+    overflow-x: hidden; 
+    overflow-y: hidden;
+  }
+  #btt {
+    position: fixed;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    width: 50px;
+    transition: margin-bottom 0.6s, opacity 0.6s;
+  }
+  
+  #btt:hover {
+    margin-bottom: 25px;
+    opacity: 1;
+    transition: margin-bottom 0.6s, opacity 0.6s;
+  }
+  
+  
+  /* WELCOME */
+  
+  
+  #portfolio h3 {
+    font-size: 28pt;
+  }
+   
+  #press {
+    width: 60px;
+    border: solid 4px white;
+    border-radius: 40px;
+    margin-top: 20%;
+    transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+  }
+  
+  #press:hover {
+    background-color: #5BC2B4;
+    opacity: 0.8;
+    margin-top: 21%;
+    transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+  }
+      
+
+  h2{
+    padding-left: 50px;
+  }
+
+  
+  #about {
+    background-color: #768350;
+    padding: 5% 5% 5% 5%;
+   
+    height: 100vh;
+    width: auto;
+    color: white;
+    font-family: 'poppins';
+  }
+  
+  #about h1 {
+    font-family: 'poppins',sans-serif;
+    font-size: 40pt;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  #about p {
+    text-align: left;
+    padding-left: 50px;
+    font-size: larger;
+  }
+  
+  #about #email img {
+    text-align: left;
+    width: 25px;
+  }
+  
+  #email {
+    background-color: #f3f4f0;
+    padding: 2% 2% 2% 2%;
+    border-radius: 40px;
+    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+    color:#768350;
+    font-family: 'poppins',sans-serif;
+  }
+  #address{
+    background-color: #f3f4f0;
+    padding: 2% 2% 2% 2%;
+    border-radius: 40px;
+    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+    color:#768350;
+    font-family: 'poppins',sans-serif; }
+    
+      #returnbtn {
+        padding: 2%;
+      }
+      
+      .back-button {
+        background-color: #f3f4f0;
+        color: #768350;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: inline-block;
+        transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+      }
+      
+      .back-button:hover {
+        background-color: #f3f4f0;
+        color: #768350;
+        box-shadow: 10px 10px 10px 10px rgba(219, 201, 201, 0.908);
+      }
+      
+      
+      .back-button {
+        background-color: #f3f4f0;
+        color: #768350;
+        border: 1px solid #768350;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: inline-block;
+        transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+      }
+      
+     
+      
+      
+  #portScroll {
+    background-color: #26816E;
+    padding: 2% 2% 2% 2%;
+    border-radius: 40px;
+    margin-left: 2%;
+    transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  }
+  
+  #about #portScroll img {
+    text-align: left;
+    margin-right: 5px;
+    width: 18px;
+  }
+  
+  #portScroll a,
+  #portScroll a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+  #self img {
+    width: 35%;
+    float: right;
+    border: solid 8px #768350;
+    border-radius: 2000px;
+    box-shadow: 5px 15px 30px #768350;
+  }
+  
+  
+  /* PORTFOLIO */
+  
+  #portfolio {
+    font-family: 'Amatic SC', cursive;
+    background-color: #68BDCA;
+    text-decoration: none;
+    color: white;
+    padding: 5% 5% 5% 5%;
+    width: auto;
+    height: 100vh;
+  }
+  
+  #portfolio h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15pt;
+  }
+  
+  #port img {
+    width: 500px;
+    opacity: 0.5;
+    transition: opacity 0.5s, box-shadow 0.5s;
+  }
+  
+  #port img:hover {
+    opacity: 1;
+    box-shadow: 0px 10px 50px #406D91;
+    transition: opacity 0.5s, box-shadow 0.5s;
+  }
+  
+  
+  /* NAV */
+  
+  #openmenu {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20pt;
+    background-color: #68BDCA;
+    border-bottom: solid 2px white;
+    border-right: solid 2px white;
+    position: fixed;
+    padding: 2px;
+    width: 10%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transition: width 0.5s;
+  }
+  
+  #openmenu:hover {
+    width: 15%;
+    transition: width 0.5s;
+    cursor: pointer;
+  }
+  
+  .overlay {
+ 
+    height: 100%;
+    width: 0;
+    position: fixed;
+  
+    z-index: 1;
+    
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+  
+    background-color: rgba(0, 0, 0, 0.9);
+  
+    overflow-x: hidden;
+  
+    transition: 0.5s;
+  
+  }
+  
+  
+
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+  
+    width: 100%;
+    
+    text-align: center;
+
+    margin-top: 30px;
+  
+  }
+  
+  
+
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+ 
+    transition: 0.3s;
+    
+  }
+  
+   
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+ 
+  
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+ 
+  }
+  
+  
+   
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+    .closebtn {
+      font-size: 40px !important;
+      top: 15px;
+      right: 35px;
+    }
+  }
