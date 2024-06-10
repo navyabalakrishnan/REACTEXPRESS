@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../Profilestyle.css';
 import axios from 'axios';
-import UserProfile from '../Components/userProfile';
+
 
 function ProfileCards() {
   const [users, setUsers] = useState([]);
-  const [currentView, setCurrentView] = useState('profileCards');
-  const [selectedUser, setSelectedUser] = useState(null);
-
   useEffect(() => {
     getUsersData();
   }, []);
 
   const getUsersData = () => {
-    axios.get("http://localhost:7000/getusersdata")
+    axios.get("http://localhost:7000/getuserdata")
       .then((res) => {
         console.log('Fetched Users:', res.data);
         setUsers(res.data);
@@ -22,24 +20,6 @@ function ProfileCards() {
         console.error("Error fetching data:", err);
       });
   };
-
-  const handleViewProfile = (user) => {
-    console.log("Selected User:", user);
-    setSelectedUser(user);
-    setCurrentView('userProfile');
-  };
-
-  const handleBackToProfiles = () => {
-    console.log("Navigating back to profile cards");
-    setCurrentView('profileCards');
-    setSelectedUser(null);
-  };
-
-  console.log("Current View:", currentView);
-
-  if (currentView === 'userProfile' && selectedUser) {
-    return <UserProfile user={selectedUser} onBack={handleBackToProfiles} />;
-  }
 
   return (
     <div className=" app-container topstyle" id='app-container ' >
@@ -57,15 +37,10 @@ function ProfileCards() {
                 <h3 className="name">{user.fullName}</h3>
                 <h4 className="title">{user.role}</h4>
               </div>
-              <button
-                className="btnknow"
-                onClick={() => {
-                  console.log("Button clicked for user:", user);
-                  handleViewProfile(user);
-                }}
-              >
-                View Profile
-              </button>
+              <Link to={`/userProfile/${user.userId}`}>
+                <button className="btnknow">View Profile</button>
+              </Link>
+
             </div>
           </div>
         ))}
@@ -75,3 +50,4 @@ function ProfileCards() {
 }
 
 export default ProfileCards;
+

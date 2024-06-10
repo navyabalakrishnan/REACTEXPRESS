@@ -32,7 +32,7 @@ function App() {
                 </>
               }
             />
-            <Route path="/userProfile/:userId" element={<UserProfile />} />
+           <Route path="/userProfile/:userId" element={<UserProfile />} />
           </Routes>
         </Container>
       </Router>
